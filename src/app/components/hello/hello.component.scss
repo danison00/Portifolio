@@ -1,0 +1,40 @@
+* {
+  color: var(--gray-6);
+}
+.box{
+    padding: 5rem;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.text > div:nth-child(1){
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 700;
+}
+.text > div:nth-child(3){
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+}
+svg{
+  width: 100px !important;
+  height: auto;
+}
+
+
+.name {
+  display: flex;
+  flex-direction: column;
+
+  & > div {
+    color: var(--green-1);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 7.8px;
+  }
+}

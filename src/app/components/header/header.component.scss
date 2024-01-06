@@ -17,20 +17,29 @@ a {
   margin-top: 10px;
   transition: 0.4s;
   &:hover {
-    color: var(--green-1);
-
-  }
-  &:hover > svg{
-    fill: var(--green-1) !important;
+    color: var(--purple-1);
+    & > svg{
+      fill: var(--purple-1) !important;
+    }
   }
 }
 svg {
   transition: 0.4s;
 }
 
+.dandev{
+  & span:nth-child(1){
+    color: var(--gray-6);
+  }
+  & span:nth-child(2){
+    color: var(--purple-1);
+  }
+}
+
+
 span {
-  color: var(--gray-6);
-  font-size: 2.2rem;
+  color: var(--purple-1);
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
 }
@@ -40,7 +49,7 @@ span {
   gap: 3rem;
 }
 div span:nth-child(1) {
-  color: var(--gray-4);
+  color: var(--gray-6);
 }
 div span:nth-child(2) {
   color: var(--gray-6);

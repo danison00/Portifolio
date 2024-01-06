@@ -1,10 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
-  --gradient-begin: #040404;
-  --gradient-end: #2E2E2E;
+  --gradient-begin: #13131F;
+  --gradient-end: #3b3b57;
   --gray-1: #333333;
   --gray-2: #4f4f4f;
   --gray-3: #828282;
@@ -13,14 +13,15 @@
   --gray-6: #f2f2f2;
 
   --green-1: #70FF00;
+  --purple-1: #8257e6;
 }
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
 body {
-  min-height: 100dvh;
-  width: 100dvw;
+  min-height: 100svh;
+  width: 100vw;
 }

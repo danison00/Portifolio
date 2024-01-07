@@ -14,11 +14,10 @@ a {
   color: var(--gray-6);
   font-size: 1.4rem;
   font-weight: 700;
-  margin-top: 10px;
   transition: 0.4s;
   &:hover {
     color: var(--purple-1);
-    & > svg{
+    & > svg {
       fill: var(--purple-1) !important;
     }
   }
@@ -27,15 +26,14 @@ svg {
   transition: 0.4s;
 }
 
-.dandev{
-  & span:nth-child(1){
+.dandev {
+  & span:nth-child(1) {
     color: var(--gray-6);
   }
-  & span:nth-child(2){
+  & span:nth-child(2) {
     color: var(--purple-1);
   }
 }
-
 
 span {
   color: var(--purple-1);
@@ -43,14 +41,47 @@ span {
   font-style: normal;
   font-weight: 700;
 }
-.header div:nth-child(2),
-.header div:nth-child(3) {
+.dandev span:nth-child(1) {
+  color: var(--gray-6);
+}
+.sumary,
+.contact {
   display: flex;
   gap: 3rem;
 }
-div span:nth-child(1) {
-  color: var(--gray-6);
+
+@media screen and (max-width: 1300px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+  .sumary,
+  .contact {
+    gap: 1.6rem;
+  }
+  a {
+    font-size: 1.1rem;
+  }
+  span {
+    font-size: 1.5rem;
+  }
 }
-div span:nth-child(2) {
-  color: var(--gray-6);
+
+@media screen and (max-width: 800px) {
+  .contact {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .header {
+    padding: 0rem .9rem;
+  }
+  .sumary {
+    gap: 1rem;
+  }
+  a {
+    font-size: .9rem;
+  }
+  span {
+    font-size: 1.2rem;
+  }
 }

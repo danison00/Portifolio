@@ -1,23 +1,26 @@
 * {
   color: var(--gray-6);
+  transition: 0.2s;
 }
 .content {
   display: flex;
-  padding: 5rem;
   width: 100%;
+  padding-bottom: 5rem;
 }
 .text {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   width: 50%;
+  height: fit-content;
 }
 .me-img {
   width: 50%;
+  height: max-content;
   display: flex;
   justify-content: flex-end;
   & img {
-    height: 70%;
+    height: 350px;
     margin-right: 20%;
   }
 }
@@ -37,6 +40,8 @@
   flex-direction: column;
 
   & > span {
+    display: flex;
+    align-items: center;
     height: 58px;
     color: var(--purple-1);
     font-size: 2.8rem;
@@ -62,4 +67,89 @@
 .logo-ng {
   width: auto;
   height: 30px;
+}
+
+@media screen and (max-width: 1300px) {
+  .me-img img {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .me-img img {
+    height: 290px;
+  }
+
+  .text > div:nth-child(1) {
+    font-size: 1.4rem;
+  }
+  .text > div:nth-child(3) {
+    font-size: 1.6rem;
+  }
+
+  .name span {
+    height: 38px;
+    font-size: 2.2rem;
+  }
+
+  .box-icons {
+    gap: 1.2rem;
+  
+    & img:nth-child(3) {
+      @extend .logo-java;
+      transform: translateY(4px);
+    }
+  }
+  .logo-java {
+    width: auto;
+    height: 30px;
+  }
+  .logo-ng {
+    width: auto;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .me-img {
+    width: 30%;
+  }
+  .me-img img {
+    height: 230px;
+  }
+  .text{
+    width: 70%;
+  }
+
+  .text > div:nth-child(1) {
+    font-size: 1.2rem;
+  }
+  .text > div:nth-child(3) {
+    font-size: 1.3rem;
+  }
+
+  .name span {
+    height: 38px;
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  
+
+  .me-img img {
+    height: 200px;
+  }
+  .content {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 0rem;
+
+  }
+  .me-img {
+    width: auto;
+  }
+  .text{
+    width: auto;
+    margin-top: 2rem;
+  }
+
 }

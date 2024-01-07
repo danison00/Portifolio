@@ -33,12 +33,16 @@ span {
 }
 @media screen and (max-width: 500px) {
   .card-icon {
-    width: 90px;
+    width: 70px;
   }
+  .icons {
+    gap: 1rem;
+  }
+
   img {
-    width: 80px !important;
+    width: 60px !important;
   }
   span {
-    font-size: 13px;
+    font-size: 11px;
   }
 }

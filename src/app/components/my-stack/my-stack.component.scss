@@ -24,6 +24,11 @@ img.spring{
   height: auto;
  
 }
+img.hibernate{
+  width: 55px !important;
+  height: auto;
+  margin-top: 15px;
+}
 .card-icon {
   position: relative;
   display: flex;
@@ -61,5 +66,10 @@ img.spring{
     width: 36px !important;
     height: auto;
    
+  }
+  img.hibernate{
+    width: 32px !important;
+    height: auto;
+    margin-top: 15px;
   }
 }

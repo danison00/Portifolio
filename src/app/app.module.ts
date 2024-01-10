@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { HelloComponent } from './components/hello/hello.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { MyStackComponent } from './components/my-stack/my-stack.component';
+import { CardProjectComponent } from './components/card-project/card-project.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { MyStackComponent } from './components/my-stack/my-stack.component';
     HeaderComponent,
     HelloComponent,
     AboutMeComponent,
-    MyStackComponent
+    MyStackComponent,
+    CardProjectComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

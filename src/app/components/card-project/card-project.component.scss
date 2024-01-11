@@ -1,5 +1,5 @@
 .card {
-  width: 350px;
+  width: 300px;
   min-height: 450px;
   border-radius: 5px;
   background-color: #8257e61e;
@@ -53,4 +53,9 @@ a {
 }
 img.icon {
   width: 27px !important;
+}
+@media screen and (max-width: 500px) {
+  .card {
+    width: 100%;
+  }
 }

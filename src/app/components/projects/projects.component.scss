@@ -1,17 +1,24 @@
 h2 {
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    margin-top: 2.5rem;
-    color: var(--gray-4);
-  }
-.box-cards{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    justify-content: center;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  margin-top: 2.5rem;
+  color: var(--gray-4);
+}
+h3 {
+  color: var(--gray-4);
+}
+p {
+  color: var(--gray-4);
+  font-size: 1rem;
+}
+.box-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
 }
 @media screen and (max-width: 500px) {
-    .box-cards{
-        gap: 2rem;
-    }
+  .box-cards {
+    gap: 2rem;
+  }
 }

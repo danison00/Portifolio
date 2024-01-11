@@ -1,16 +1,13 @@
 <div class="card">
-  <div class="img">
-    <img class="img-project" src="/assets/img/wumpus.jpeg" alt="" />
+  <div class="box-img">
+    <img class="img-project" [src]="imgPath" alt="" />
   </div>
   <div class="content">
-    <h3>Mundo de Wumpus</h3>
-    <p>
-      Algoritmo genético de aprendizagem de máquina desenvolvido para a
-      disciplina de Inteligência Computacional inspirado na Teoria de Evolução
-      para solucionadar o jogo lógico Mundo de Wumpus.
-    </p>
+    <ng-content>
+
+    </ng-content>
     <div class="box-link">
-      <a href="">
+      <a [href]="githubLink" target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="27"

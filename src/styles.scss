@@ -20,8 +20,30 @@
   padding: 0;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
+
 }
 body {
   min-height: 100svh;
   width: 100vw;
+}
+.left{
+  transform: translateX(100%);
+  
+}
+.rigth{
+  transform: translateX(-100%);
+
+}
+.hidden{
+  transition: .7s;
+  filter: blur(15px);
+  opacity: 0;
+
+}
+.show{
+  filter: none;
+  transition: .7s;
+  opacity: 1;
+  transform: translateX(0);
+
 }

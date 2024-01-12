@@ -2,13 +2,20 @@
   color: var(--gray-6);
   transition: 0.2s;
 }
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .content {
   display: flex;
   width: 100%;
+  min-height: calc(100dvh - 58px);
   padding-bottom: 5rem;
+  @extend .center;
+
 }
 .text {
-  display: flex;
   flex-direction: column;
   gap: 0.5rem;
   width: 50%;

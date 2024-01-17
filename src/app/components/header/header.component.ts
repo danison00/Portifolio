@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScrollService } from 'src/app/service/scroll.service';
 
 @Component({
   selector: 'my-header',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+
+  constructor(private scroolServ: ScrollService) { }
+
+  scroll(y: number) {
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }
 
 }

@@ -1,6 +1,6 @@
 .card {
   width: 300px;
-  min-height: 450px;
+  height: 460px;
   border-radius: 5px;
   background-color: #8257e61e;
   box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
@@ -13,7 +13,7 @@
     transform: scale(1.03);
   }
 }
-.box-img{
+.box-img {
   width: 300px;
   height: 260px;
   overflow: hidden;
@@ -35,16 +35,17 @@ p {
   font-size: 15px;
 }
 .box-link {
-  bottom: 0.7rem;
-  left: 0;
   margin-top: 10px;
-  width: 100%;
+  height: 30px;
   display: flex;
   justify-content: flex-end;
   position: absolute;
+  width: 100%;
+  padding: 0 1rem;
+  bottom: 1rem;
 }
 a {
-  transition: .2s;
+  transition: 0.2s;
   display: flex;
   gap: 5px;
   align-items: center;
@@ -61,9 +62,9 @@ img.icon {
   width: 27px !important;
 }
 @media screen and (max-width: 500px) {
-  .box-img{
+  .box-img {
     width: 100%;
-   height: 100%;
+    height: 100%;
   }
   .card {
     width: 100%;

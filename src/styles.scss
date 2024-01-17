@@ -24,7 +24,7 @@
 }
 body {
   min-height: 100svh;
-  width: 100vw;
+  max-width: 100dvw;
 }
 .left{
   transform: translateX(100%);

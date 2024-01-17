@@ -68,5 +68,16 @@ img.icon {
   }
   .card {
     width: 100%;
+    height: max-content;
+  }
+  
+  .box-link {
+
+    position: static;
+ 
+  }
+  a{
+    margin-right: 0;
+
   }
 }

@@ -10,6 +10,7 @@ import { MyStackComponent } from './components/my-stack/my-stack.component';
 import { CardProjectComponent } from './components/card-project/card-project.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ModalComponent } from './components/modal/modal.component';
     MyStackComponent,
     CardProjectComponent,
     ProjectsComponent,
-    ModalComponent
+    ModalComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

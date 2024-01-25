@@ -98,6 +98,10 @@
     height: 38px;
     font-size: 2.2rem;
   }
+  .content{
+    padding: 0 2rem 2rem 2rem;
+
+  }
 
   .box-icons {
     gap: 1.2rem;
@@ -115,6 +119,16 @@
     width: auto;
     height: 20px;
   }
+}
+@media screen and (max-width: 800px) {
+  .content{
+    padding: 0 0rem 2rem 0rem;
+
+  }
+  .me-img {
+    width: 40%;
+  }
+  
 }
 @media screen and (max-width: 650px) {
   .me-img {
@@ -138,16 +152,22 @@
     height: 38px;
     font-size: 2rem;
   }
+  .content{
+    padding: 0 1rem 2rem 1rem;
+
+  }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 580px) {
   
 
   .me-img img {
     height: 200px;
+    margin-bottom: 3rem;
   }
   .content {
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
     padding-bottom: 0rem;
 
   }
@@ -155,7 +175,9 @@
     width: auto;
   }
   .text{
+    display: flex;
     width: 100%;
+    justify-content: center;
     margin-top: 2rem;
   }
 

@@ -6,6 +6,11 @@
   justify-content: space-between;
   align-items: center;
 }
+svg.google{
+  
+  width: 25px;
+
+}
 a {
   display: flex;
   align-items: center;
@@ -16,15 +21,13 @@ a {
   font-weight: 700;
   transition: 0.4s;
   &:hover {
-    color: var(--purple-1);
-    & > svg {
-      fill: var(--purple-1) !important;
-    }
+   text-decoration: underline;
   }
 }
 svg {
   transition: 0.4s;
 }
+
 
 .dandev {
   & span:nth-child(1) {
@@ -67,19 +70,22 @@ span {
 }
 
 @media screen and (max-width: 800px) {
-  .contact {
+  .sumary {
     display: none;
   }
 }
 @media only screen and (max-width: 500px) {
-  .header {
-    padding: 0rem .9rem;
+  .contact {
+    gap: 0.6rem;
   }
-  .sumary {
-    gap: 1rem;
+  svg {
+    width: 25px;
+  }
+  .header {
+    padding: 0rem 0.9rem;
   }
   a {
-    font-size: .9rem;
+    font-size: 0.7rem;
   }
   span {
     font-size: 1.2rem;

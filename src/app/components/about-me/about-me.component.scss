@@ -1,6 +1,5 @@
 .content {
   padding: 3rem 0;
-  margin-bottom: 5rem;
 
 }
 p,
@@ -19,10 +18,5 @@ strong {
   p,
   h2 {
     width: 100%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .content {
-    padding: 6rem 0;
   }
 }
